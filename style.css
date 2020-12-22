@@ -1,0 +1,246 @@
+body{
+    margin: 0;
+    font-family: 'Source Sense Pro';
+}
+
+a{
+    text-decoration:none;
+    color:white;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:skyblue;
+    padding:8px 12px;
+}
+
+.navbar_logo{
+    font-size:24px;
+    color: white;
+}
+
+.navbar_menu{
+    display: flex;
+    list-style: none;
+    padding-left:0;
+}
+
+.navbar_menu li{
+    padding: 8px 20px;
+}
+
+.navbar_menu li:hover{
+    background-color: antiquewhite;
+    border-radius: 4px;
+}
+
+.navbar_icons {
+    color:white;
+    display: flex;
+    list-style:none;
+    padding-left:0;
+}
+
+.navbar_icons li{
+    padding: 8px 12px;
+}
+
+.navbar_toggle{
+    display:none;
+    position: absolute;
+    right:32px;
+}
+.main_box{
+    display: flex;
+    margin-top:10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(175, 161, 161);
+    border-radius: 20px;
+}
+
+.main_setting{
+    width: 100%;
+    padding:8px 12px;
+}
+
+.main_box_icons {
+    justify-content: space-between;
+    color:white;
+    display: flex;
+    list-style:none;
+}
+
+.main_setting li{
+    padding: 8px 24px;
+    list-style: none;
+    align-items: center;
+}
+.main_box_icons_name{
+    margin:5px;
+    justify-content: space-between;
+    color:white;
+    display: flex;
+    list-style:none;
+    font-style: 굴림;
+}
+.line{
+    margin-top:10px;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: gainsboro;
+    border-style: solid;
+}
+.profile_box{
+    margin: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.profile_font{
+    display: flex;
+    margin-top: 10px;
+    font-size: 35px;
+    align-items: center;
+    margin-left: 50%;
+    margin-bottom: 20px;
+}
+
+.profile_content{
+    display: flex;
+}
+
+.profile_main_content{
+    margin-left: 10%;
+    font-size: 20px;
+    font-weight: 600;
+}
+.blog_coment{
+    margin-left: 15%;
+    font-size: 20px;
+    font-weight: 600;
+}
+.blog_main_coment{
+    font-size: 12px;
+    font-weight: 600;
+}
+.work_content{
+    margin-top:30px;
+}
+.calender-box{
+    display: flex;
+}
+
+.calender{
+    margin-left: 10%;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    box-sizing: border-box;
+    position: relative;
+    width:200px;
+    height: 220px;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    border-style: solid;
+}
+
+.upper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(240, 150, 47);
+}
+
+.lower{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height:120px;
+    font-size:16px;
+}
+
+#month{
+    font-size: 40px;
+    font-weight: 900;
+    color:white;
+}
+
+#date{
+    margin-bottom: 5px;
+    font-size: 60px;
+    line-height: 1;
+    columns: #333333;
+}
+
+.wtdt{
+    margin-top:10px;
+    margin-left: 11%;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.wtdt li{
+    list-style: none;
+}
+
+@media screen and (max-width: 1720px){
+    .profile_font{
+        width:1200px;
+        display: flex;
+        margin-top: 10px;
+        font-size: 35px;
+        align-items: center;
+        margin-left: 50%;
+        margin-bottom: 20px;
+    }
+    .profile_content{
+        width:1400px;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+
+    .main_box{
+        width: 500px;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .navbar_menu{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar_menu li{
+        width:100%;
+        text-align: center;
+    }
+    .navbar_icons{
+        display: none;
+        justify-content:center;
+        width:100%;
+    }
+
+    .navbar_toggle{
+        display: block;
+    }
+
+    .navbar_menu.active,
+    .navbar_icons.active{
+        display: flex;
+    }
+}
+
+
